@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" type="text/css">
     <script src="bundle.js"></script>
+</head>
+
+<body style="background-color:aquamarine">
+    <header><h2 class="text-center">Formato de Registro</h2></header>
+    <div class="container">
+        <div class="jumbotron" style="margin-top:30px">
+            <form>                
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Nombre(s)</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Macarena">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Apellido Paterno</label>
+                        <input type="text" class="form-control" id="paterno" placeholder="Gómez">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Apellido Materno</label>
+                        <input type="text" class="form-control" id="materno" placeholder="Sanz">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Pais</label>
+                        <input type="text" class="form-control" id="pais" placeholder="Pais">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Estado</label>
+                        <input type="text" class="form-control" id="estado" placeholder="Baja California">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Ciudad</label>
+                        <input type="text" class="form-control" id="ciudad" placeholder="Ensenada">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Codigo Postal</label>
+                        <input type="text" class="form-control" id="cp" placeholder="92830">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Calle</label>
+                        <input type="text" class="form-control" id="calle" placeholder="Principal">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Numero</label>
+                        <input type="text" class="form-control" id="numero" placeholder="1234">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Colonia</label>
+                        <input type="text" class="form-control" id="colonia" placeholder="Centro">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>email</label>
+                        <input type="email" class="form-control" id="email" placeholder="usuario@mail.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="password">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Confirmar password</label>
+                        <input type="password" class="form-control" id="cpassword" placeholder="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkForm">
+                        <label class="form-check-label">
+                            Aceptar terminos
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="ValidarCampos()">Registrar</button>
+            </form>
+        </div>     
+    </div>
+    </div>
 </body>
+
 </html>
